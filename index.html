@@ -1,336 +1,95 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>For Elsie ❤️</title>
-
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Great+Vibes&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#160d18">
+  <title>Happy Birthday My Love ❤️</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+  <nav class="nav">
+    <a class="brand" href="#home">♥ <span>My Princess</span></a>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#story">Our Story</a></li>
+      <li><a href="#surprise">Surprise</a></li>
+    </ul>
+  </nav>
 
-    <!-- Background effects -->
-    <div class="ambient-glow"></div>
-    <div class="petals" id="petals"></div>
 
-    <!-- Navigation -->
-    <header class="navbar">
-        <a href="#home" class="logo">Elsie <span>♡</span></a>
-
-        <nav>
-            <a href="#home">Home</a>
-            <a href="#story">Our Story</a>
-            <a href="#memories">Memories</a>
-            <a href="#letter">My Letter</a>
-            <a href="#surprise">Surprise</a>
-        </nav>
-
-        <button class="music-button" id="musicToggle">
-            ♫ <span id="musicText">Play our song</span>
-        </button>
-    </header>
-
-    <!-- HERO -->
-    <section class="hero" id="home">
-
-        <div class="hero-content">
-
-            <p class="eyebrow">A LITTLE SOMETHING FOR YOU</p>
-
-            <div class="divider">
-                <span></span>♡<span></span>
-            </div>
-
-            <p class="intro-title">To my favorite person,</p>
-
-            <h1>Elsie</h1>
-
-            <p class="hero-message">
-                On your special day, I just want you to know...
-                <br>
-                how much you mean to me, today and always.
-            </p>
-
-            <div class="divider small-divider">
-                <span></span>♡<span></span>
-            </div>
-
-            <button class="primary-button" id="openGift">
-                <span>🎁</span> Open Your Gift <span>→</span>
-            </button>
-
-            <p class="made-with-love">
-                A birthday surprise, made with love ❤️
-            </p>
-
-        </div>
-
-        <!-- Birthday countdown -->
-        <div class="countdown-card">
-
-            <p class="countdown-heading">♕ &nbsp; BIRTHDAY COUNTDOWN</p>
-
-            <div class="countdown" id="countdown">
-
-                <div>
-                    <span id="days">00</span>
-                    <small>Days</small>
-                </div>
-
-                <div>
-                    <span id="hours">00</span>
-                    <small>Hours</small>
-                </div>
-
-                <div>
-                    <span id="minutes">00</span>
-                    <small>Minutes</small>
-                </div>
-
-                <div>
-                    <span id="seconds">00</span>
-                    <small>Seconds</small>
-                </div>
-
-            </div>
-        </div>
-
-        <div class="scroll-indicator">
-            <span>↓</span>
-            <p>Scroll to explore</p>
-        </div>
-
-        <div class="quote-card">
-            <p>
-                "You make life brighter,<br>
-                my days happier,<br>
-                and my heart fuller."
-            </p>
-            <span>— Yours always ❤️</span>
-        </div>
-
+  <main>
+    <section id="home" class="hero section-wrap">
+      <div class="hero-content">
+        <span class="eyebrow">A little celebration of you</span>
+        <h1>Happy Birthday,<br><span>My Love</span> <span class="heart">♥</span></h1>
+        <p>Today is not just your birthday, it is the celebration of the most beautiful soul that entered my life. Thank you for filling my days with happiness, love, laughter and endless memories. I may not always find the perfect words, but please know that every beat of my heart belongs to you. You are my favourite hello, my sweetest dream and my greatest blessing.</p>
+        <p class="hero-signoff">Happy Birthday, my love. ♥</p>
+        <button id="musicButton" class="button button-primary" type="button">♫ <span>Play your favourite song</span></button>
+        <p id="musicStatus" class="small-note" aria-live="polite"></p>
+      </div>
+      <div class="hero-decoration" aria-hidden="true"><span>♥</span><span>✦</span><span>♥</span></div>
     </section>
 
-    <!-- OUR STORY -->
-    <section class="section story-section" id="story">
 
-        <p class="eyebrow">A STORY THAT MEANS SOMETHING</p>
-
-        <h2>Some people make<br>life feel <em>beautiful.</em></h2>
-
-        <div class="section-line"></div>
-
-        <p class="section-description">
-            Somewhere along life's journey, amidst all its ordinary days,
-            there are people who make things feel a little more special.
-            People whose presence brings peace, whose laughter stays in your mind,
-            and whose existence makes you grateful for the little things.
-        </p>
-
-        <p class="section-description">
-            And today, I celebrate one of those people.
-            <br>
-            <strong>You.</strong>
-        </p>
-
-        <div class="story-highlight">
-            <span>♡</span>
-            <p>Some beautiful things in life are not planned.<br>
-            They are simply found, cherished and appreciated.</p>
-        </div>
-
+    <section id="gallery" class="section-wrap section-block">
+      <span class="eyebrow">Moments worth keeping</span>
+      <h2>Our Gallery <span class="heart">♥</span></h2>
+      <div class="gallery">
+        <img loading="lazy" src="https://images.unsplash.com/photo-1517841905240-472988babdf9?w=900&auto=format&fit=crop" alt="A beautiful portrait">
+        <img loading="lazy" src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=900&auto=format&fit=crop" alt="A smiling portrait">
+        <img loading="lazy" src="https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?w=900&auto=format&fit=crop" alt="A lovely memory">
+      </div>
     </section>
 
-    <!-- MEMORIES -->
-    <section class="section memories-section" id="memories">
 
-        <p class="eyebrow">LITTLE MOMENTS, BIG MEANING</p>
-
-        <h2>Moments worth<br><em>keeping forever.</em></h2>
-
-        <p class="section-description">
-            Every photograph has a story. Every moment has a feeling.
-            This little space is reserved for some of my favorite memories of you.
-        </p>
-
-        <div class="gallery">
-
-            <div class="memory-card memory-one">
-                <div class="memory-overlay">
-                    <span>A beautiful soul</span>
-                </div>
-            </div>
-
-            <div class="memory-card memory-two">
-                <div class="memory-overlay">
-                    <span>Your smile</span>
-                </div>
-            </div>
-
-            <div class="memory-card memory-three">
-                <div class="memory-overlay">
-                    <span>My favorite moments</span>
-                </div>
-            </div>
-
-        </div>
-
-        <p class="gallery-note">
-            Replace these spaces with your favorite pictures of Elsie.
-        </p>
-
+    <section id="story" class="section-wrap section-block story-card">
+      <span class="eyebrow">A few words from my heart</span>
+      <h2>Our Story <span class="heart">♥</span></h2>
+      <p>Every love story is beautiful, but ours is my favourite. From the first conversation to every smile, every call, every laugh and every moment we've shared together, you've made my life brighter than I ever imagined.</p>
+      <p>I promise to keep making memories with you and loving you more every day. Forever starts with you. ♥</p>
     </section>
 
-    <!-- LOVE REASONS -->
-    <section class="section reasons-section">
 
-        <p class="eyebrow">A FEW THINGS I APPRECIATE ABOUT YOU</p>
-
-        <h2>And if you ever<br>forget how <em>special you are...</em></h2>
-
-        <p class="section-description">
-            Here's a little reminder.
-        </p>
-
-        <div class="reasons-container">
-
-            <button class="reason-button" data-reason="Your smile has a way of making an ordinary day feel a little more beautiful.">
-                <span>01</span> Your smile <b>+</b>
-            </button>
-
-            <button class="reason-button" data-reason="There is something about the way you express yourself that makes you uniquely you.">
-                <span>02</span> The way you express yourself <b>+</b>
-            </button>
-
-            <button class="reason-button" data-reason="I appreciate the person you are, even in the little things you may never notice.">
-                <span>03</span> Your beautiful heart <b>+</b>
-            </button>
-
-            <button class="reason-button" data-reason="You deserve love, happiness, peace and every beautiful thing life has to offer.">
-                <span>04</span> Simply being you <b>+</b>
-            </button>
-
+    <section id="surprise" class="section-wrap section-block surprise-section">
+      <span class="eyebrow">Something just for you</span>
+      <h2>Secret Birthday Surprise <span class="heart">♥</span></h2>
+      <p class="surprise-intro">There is a little gift waiting. Enter the secret word to unlock it.</p>
+      <div class="password-box">
+        <label for="password">Secret password</label>
+        <div class="password-row">
+          <input type="password" id="password" placeholder="Enter the password" autocomplete="off" aria-describedby="passwordMessage">
+          <button id="surpriseButton" class="button button-primary" type="button">Unlock surprise</button>
         </div>
-
-        <div class="reason-reveal" id="reasonReveal">
-            Click any of the little reminders above ♡
+        <p id="passwordMessage" class="small-note" role="status"></p>
+      </div>
+      <div id="secret-content" class="secret-content" hidden>
+        <h3>Happy Birthday, My Queen! ♥</h3>
+        <div class="cakes">
+          <img loading="lazy" src="https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?w=900&auto=format&fit=crop" alt="A birthday cake">
+          <img loading="lazy" src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=900&auto=format&fit=crop" alt="A beautiful celebration cake">
         </div>
-
+        <p>Every candle on this cake represents a beautiful reason why I love you. May your day be filled with joy, laughter and all the love your heart can hold. You deserve the sweetest things in life. ♥</p>
+      </div>
     </section>
+  </main>
 
-    <!-- LETTER -->
-    <section class="section letter-section" id="letter">
 
-        <p class="eyebrow">WORDS FROM MY HEART</p>
-
-        <h2>A letter <em>for you.</em></h2>
-
-        <div class="letter-card">
-
-            <div class="letter-top">♡</div>
-
-            <h3>Dear Elsie,</h3>
-
-            <p>
-                Today is about celebrating you. Not just because it's your birthday,
-                but because your life is something worth celebrating every single day.
-            </p>
-
-            <p>
-                I hope this new chapter brings you closer to your dreams.
-                I hope you find strength on difficult days, joy in the smallest things,
-                peace in moments of uncertainty, and love in places you least expect it.
-            </p>
-
-            <p>
-                May you never lose the beautiful things that make you who you are.
-                May you continue growing, glowing, smiling, and becoming everything
-                your heart dreams of being.
-            </p>
-
-            <p>
-                Thank you for being you. I hope today reminds you just how
-                valuable, loved and appreciated you are.
-            </p>
-
-            <p>
-                Happy birthday, my favorite person. ❤️
-            </p>
-
-            <div class="letter-signature">
-                With love, always.
-            </div>
-
-        </div>
-
-    </section>
-
-    <!-- SURPRISE -->
-    <section class="section surprise-section" id="surprise">
-
-        <p class="eyebrow">THERE'S ONE MORE THING</p>
-
-        <h2>A little surprise<br>for <em>your heart.</em></h2>
-
-        <p class="section-description">
-            I saved one final message just for you.
-        </p>
-
-        <button class="surprise-button" id="surpriseButton">
-            Open your little surprise ♡
-        </button>
-
-        <div class="surprise-message" id="surpriseMessage">
-
-            <div class="surprise-heart">♥</div>
-
-            <h3>One wish for you...</h3>
-
-            <p>
-                May God guide your steps, protect your heart,
-                bless your dreams, and give you a life filled with purpose,
-                beautiful memories and genuine happiness.
-            </p>
-
-            <p>
-                And may you always remember that somewhere in this world,
-                someone is wishing you the very best.
-            </p>
-
-        </div>
-
-    </section>
-
-    <!-- FINAL -->
-    <footer class="footer">
-
-        <div class="footer-heart">♡</div>
-
-        <h2>Happy Birthday, Elsie.</h2>
-
-        <p>May your life be as beautiful as the love you give.</p>
-
-        <span class="footer-signature">Made with love, just for you.</span>
-
-        <div class="footer-bottom">
-            © A little birthday corner of the internet.
-        </div>
-
-    </footer>
-
-    <!-- Music -->
-    <audio id="backgroundMusic" loop>
-        <source src="music.mp3" type="audio/mpeg">
-    </audio>
-
-    <script src="script.js"></script>
-
+  <div id="countdownScreen" class="countdown-screen" aria-hidden="true">
+    <div class="countdown-inner">
+      <p>Get ready, my love…</p>
+      <div id="countdownNumber" aria-live="assertive">10</div>
+      <span>♥</span>
+    </div>
+  </div>
+  <footer>Made with love, just for you <span>♥</span></footer>
+  <audio id="music" preload="none" loop>
+    <source src="favorite-song.mp3" type="audio/mpeg">
+  </audio>
+  <script src="script.js"></script>
 </body>
 </html>
